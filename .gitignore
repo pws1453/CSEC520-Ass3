@@ -1,3 +1,5 @@
 feature_files/*
 feature_vectors/*
+benign_vectors/*
+malware_vectors/*
 feature_files.zip
