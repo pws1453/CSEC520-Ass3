@@ -13,7 +13,7 @@ with open("sha256_family.csv") as csvfile:
 
 os.mkdir('benign_vectors')
 list_of_benign = os.listdir('feature_vectors')
-randints = random.sample(range(len(list_of_benign)),6000)
+randints = random.sample(range(len(list_of_benign)),3000)
 for num in randints:
     hash = list_of_benign[num]
     os.rename(f'feature_vectors/{hash}', f'benign_vectors/{hash}')
